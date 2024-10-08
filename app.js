@@ -1,4 +1,4 @@
-criarCartao(categoria, pergunta, resposta) {
+criarCartao(categoria, pergunta, resposta) ;{
 
 }
 function criaCartao(categoria, pergunta, resposta){
@@ -6,14 +6,22 @@ function criaCartao(categoria, pergunta, resposta){
     let cartao = document.createElement('article')
     cartao.className = 'cartao'
 }
-cartao.innerHTML =
+cartao.innerHTML = 
 `<div class="cartao_conteudo"></div>
-                <h3>Programação</h3>
+                <h3>${categoria}</h3>
                 <div class="cartao_conteudo_pergunta">
-                    <p>O que é JavaScript?</p>
+                    <p>${pergunta}</p>
                 </div>
                 <div class="cartao_conteudo_resposta">
-                    <p>O JavaScript é uma linguagem de programação</p>
+                    <p>${resposta}</p>
                     </div>
-                    </div>`
+                    </div>
+                    `
+                    container.appenchild(cartao)
+                    let respostasEstaVisivel= false
+                    function viraCartao () {
+                        respostasEstaVisivel = !respostasEstaVisivel
+                        cartao.classList.toogle('active',respostasEstaVisivel)
+                    }
+                    cartao.addEventListener('click', viraCartao)
                     container.appenchild(cartao)
