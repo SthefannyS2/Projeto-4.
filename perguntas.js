@@ -1,15 +1,20 @@
 criaCartao(
     'Programação',
     'O que é JavaScript',
-    'O Javascript é uma linguagem de programação'
+    'O JavaScript é uma linguagem de programação'
 )
 criaCartao(
     'Geografia',
-    'Qual a capital da França',
+    'Qual a capital da França?',
     'A capital da França é Paris'
 )
 criaCartao(
-    'Programaçao',
-    'O que é uma função',
+    'Programação',
+    'o que é uma função?',
     'Uma função é um bloco de código que executa alguma tarefa'
+)
+criaCartao(
+    'Língua Inglesa',
+    'Como se diz oi em inglês?',
+    'Oi em inglês se diz HI(RAI)'
 )
